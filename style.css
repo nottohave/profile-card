@@ -4,14 +4,29 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Kumbh Regular";
+  src: url(./fonts/KumbhSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Kumbh Bold";
+  src: url(./fonts/KumbhSans-Bold.ttf);
+}
+
 html {
-  /* background-color: hsl(185, 75%, 39%); */
+  background-color: hsl(185, 75%, 39%);
+  font-size: 62.5%;
+  --boldText: calc(1rem + 1vw);
+  --regularText: calc(0.75rem + 1vw);
+  --statUnderneath: calc(0.625 + 1vw);
+  --regularTextColor: hsl(0, 0%, 59%);
 }
 
 body {
   background: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg);
-  background-position: -60% 190%, 160% -150%;
+  background-position: -60% 190%, 160% -135%;
   background-repeat: no-repeat;
   height: 720px;
   display: flex;
@@ -21,28 +36,69 @@ body {
 }
 
 .profile-card {
+  margin-top: 10%;
   width: 350px;
   height: 373px;
 }
 
 .topcard {
+  width: 350px;
+  height: 284px;
+  background-image: url(./images/bg-pattern-card.svg);
+  background-size: 350px 140px;
+  border-radius: 15px 15px 0px 0px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
-.profile-top-card {
-  background-image: url(./images/bg-pattern-card.svg);
-  width: 350px;
-  height: 140px;
-  border-radius: 15px 15px 0px 0px;
-}
-
 .profile-image {
-  /* position: absolute; */
+  position: absolute;
+  z-index: 1;
 }
 
 .profile-image img {
-  border: solid 6px black;
+  border: solid 6px white;
   border-radius: 50%;
+}
+
+.victorTitle {
+  position: absolute;
+  z-index: 1;
+  transform: translate(0px, 100px);
+}
+
+.victorTitle h2 {
+  font-size: var(--boldText);
+  font-family: "Kumbh Regular";
+  color: hsl(227, 10%, 46%);
+}
+
+.victorTitle h2::after {
+  content: " 26";
+  color: var(--regularTextColor);
+}
+
+.victorTitle span {
+  font-size: var(--regularText);
+  color: var(--regularTextColor);
+}
+
+.underlayer {
+  background-color: white;
+  position: absolute;
+  width: 350px;
+  height: 143px;
+  z-index: 0;
+  margin-top: 40%;
+}
+
+.bottomcard {
+  background-color: white;
+  height: 92px;
 }
 
 .attribution {
