@@ -17,10 +17,11 @@
 html {
   background-color: hsl(185, 75%, 39%);
   font-size: 62.5%;
-  --boldText: calc(1rem + 1vw);
+  --boldText: calc(0.4rem + 1vw);
   --regularText: calc(0.75rem + 1vw);
-  --statUnderneath: calc(0.625 + 1vw);
-  --regularTextColor: hsl(0, 0%, 59%);
+  --london: calc(0.1rem + 1vw);
+  --statUnderneath: calc(1 + 1vw);
+  --regularTextColor: hsl(0, 0%, 53%);
 }
 
 body {
@@ -33,12 +34,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 6rem;
 }
 
 .profile-card {
-  margin-top: 10%;
   width: 350px;
   height: 373px;
+  margin: 0;
+  padding: 0;
 }
 
 .topcard {
@@ -61,30 +64,37 @@ body {
 }
 
 .profile-image img {
-  border: solid 6px white;
+  border: solid 5px white;
   border-radius: 50%;
 }
 
 .victorTitle {
   position: absolute;
   z-index: 1;
-  transform: translate(0px, 100px);
+  transform: translate(0px, 96px);
 }
 
 .victorTitle h2 {
   font-size: var(--boldText);
-  font-family: "Kumbh Regular";
-  color: hsl(227, 10%, 46%);
+  font-family: "Kumbh Bold";
+  color: hsl(229, 23%, 23%);
+  font-weight: 500;
 }
 
 .victorTitle h2::after {
   content: " 26";
   color: var(--regularTextColor);
+  font-family: "Kumbh Regular";
+  font-weight: 590;
 }
 
 .victorTitle span {
-  font-size: var(--regularText);
+  display: flex;
+  justify-content: center;
+  font-family: "Kumbh Regular";
+  font-size: var(--london);
   color: var(--regularTextColor);
+  margin-top: 1rem;
 }
 
 .underlayer {
@@ -99,6 +109,19 @@ body {
 .bottomcard {
   background-color: white;
   height: 92px;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.bottomcard hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+.stat {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .attribution {
