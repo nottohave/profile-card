@@ -152,8 +152,15 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 842px) {
-}
+@media screen and (max-width: 950px) {
+  body {
+    background-position: -480px 220%, 400px -148%;
+  }
 
-@media screen {
+  .victorTitle h2 {
+    font-size: 1.8rem;
+  }
+  .stat span::first-line {
+    font-size: 1.8rem;
+  }
 }
