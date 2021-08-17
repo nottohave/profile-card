@@ -6,7 +6,7 @@
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Profile Card Component](https://nottohave.github.io/profile-card/)
 
 ## My process
 
