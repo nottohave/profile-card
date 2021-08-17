@@ -149,7 +149,7 @@ body {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: rgba(0, 255, 255, 0.548);
 }
 
 @media screen and (max-width: 950px) {
@@ -162,5 +162,19 @@ body {
   }
   .stat span::first-line {
     font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    background-color: black;
+  }
+  body {
+    background: url(./images/bg-pattern-top.svg);
+    background-position: center;
+    background-size: 60rem;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: rgba(0, 255, 255, 0.603);
   }
 }
