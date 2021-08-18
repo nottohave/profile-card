@@ -25,7 +25,7 @@ html {
 body {
   background: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg);
-  background-position: -73% 180%, 145% -148%;
+  background-position: top -57rem left -22rem, bottom -60rem right -22rem;
   background-repeat: no-repeat;
   height: 720px;
   display: flex;
@@ -154,7 +154,7 @@ body {
 
 @media screen and (max-width: 950px) {
   body {
-    background-position: -480px 220%, 400px -148%;
+    background-position: top -57rem left -49rem, bottom -60rem right -50rem;
   }
 
   .victorTitle h2 {
@@ -162,19 +162,5 @@ body {
   }
   .stat span::first-line {
     font-size: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  html {
-    background-color: black;
-  }
-  body {
-    background: url(./images/bg-pattern-top.svg);
-    background-position: center;
-    background-size: 60rem;
-    background-repeat: no-repeat;
-    background-color: black;
-    color: rgba(0, 255, 255, 0.603);
   }
 }
