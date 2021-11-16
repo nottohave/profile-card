@@ -25,7 +25,7 @@ html {
 body {
   background: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg);
-  background-position: top -57rem left -22rem, bottom -60rem right -22rem;
+  background-position: right 50vw bottom 40vh, left 50vw top 50vh;    background-repeat: no-repeat;
   background-repeat: no-repeat;
   height: 720px;
   display: flex;
@@ -158,7 +158,7 @@ header h1 {
 
 @media screen and (max-width: 950px) {
   body {
-    background-position: top -57rem left -49rem, bottom -60rem right -50rem;
+    background-position: right 50vw bottom 40vh, left 50vw top 50vh;    background-repeat: no-repeat;
   }
 
   .victorTitle h2 {
